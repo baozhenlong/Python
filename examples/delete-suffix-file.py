@@ -30,7 +30,8 @@ def deleteFile():
     targetDir = fileDir()
     for file in os.listdir(targetDir):
         targetFile = os.path.join(targetDir, file)
-        if(suffix(file, '.txt', '.docx')):
+        if (suffix(file, '.txt', '.docx')):
             os.remove(targetFile)
+
 
 deleteFile()
